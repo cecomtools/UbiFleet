@@ -60,14 +60,16 @@
       }
 
       .frame-wrapper {
-        flex: 1;
-        min-height: 80vh;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
-        border: 1px solid rgba(148, 163, 184, 0.4);
-        background: #020617;
-      }
+    flex: 1;
+    min-height: 80vh;
+    overflow: hidden;
+    background: none;   /* Quita fondo */
+    border: none;       /* Quita borde */
+    box-shadow: none;   /* Quita sombra */
+    border-radius: 0;   /* Quita el redondeado */
+    padding: 0;         /* Quita margen interno */
+}
+
 
       iframe {
         width: 100%;
@@ -112,7 +114,7 @@
           src="https://script.google.com/macros/s/AKfycbx3jkBIV468SFdRbRroJb6ji4WVlSd3DxA_agUGXq-oNlZjRh_LP84DxDUsKXCnNXpwig/exec"
           title="UbiFleet – Consulta por placa"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerpolicy="no-referrer-when-downgrade" style="border:0; width:100%; height:100%;"
         ></iframe>
       </div>
 
